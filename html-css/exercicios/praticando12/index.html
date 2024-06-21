@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhador</title>
+    <style>
+        body{
+            background-color:#0455BF;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0px;
+        }
+        header{
+            text-align: center;
+        }
+        h2{
+            width: 10px auto 10px auto;
+        }
+        section{
+            background-color: #0442BF;
+            text-align: center;
+            padding: 20px 15px 20px;
+            margin: auto;
+            width: 500px;
+            box-shadow: 1px 1px 1px black;
+        }
+        #res{
+            text-align: center;
+            margin: 20px;
+        }
+        
+        footer{
+            text-align: center;
+            padding: 1px;
+            color: white;
+            background-color:#f24e4e;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Escolhedor de casas</h1>
+        <h2>Coloque o nome de quem vai fornecer a casa, e o site vai fazer o resto:</h2>
+    </header>
+    <section>
+
+        <input type="text" name="txt1" id="txt2"> ou 
+        <input type="text" name="txt3" id="txt3"> 
+        <input type="button" value="Escolher" onclick="escolher()">
+
+    </section>
+
+    <div id="res">
+        Resposta:
+    </div>
+
+    <footer>
+        <p><em>Site 97% de acertividade</em></p>
+    </footer>
+    <script>
+
+        function escolher(){
+
+            var n1 = window.document.getElementById('txt2');
+            var n2 = window.document.getElementById('txt3');
+            var res = window.document.getElementById('res');
+            var rn = (n1.value);
+            var rn2 = (n2.value);
+
+            if(rn = 'Henrique', 'Henrique', 'casa do henrique', 'Casa do henrique'){
+                n1= window.document.getElementById('res').innerHTML =
+                `${rn}, vamo nessa tropa!`                
+
+            }
+
+            else(rn != 'Henrique', 'henrique', 'casa do henrique', 'Casa do henrique');{
+                n1= window.document.getElementById('res').innerHTML = 
+               `${rn}, vamo nessa tropa!`
+            }
+        }
+    </script>
+</body>
+</html>

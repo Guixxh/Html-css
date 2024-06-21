@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <style>
+        body{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#223240;
+            text-align: center;
+        }
+        img{
+            background-color: #3B8C66;
+            border-radius: 30px;
+            padding: 5px 5px 6px;
+            box-shadow: 1px 4px 5px;
+        }
+        h1{
+            margin: auto;
+            background-color:#367356 ;
+            border-radius: 30px;
+            width: 550px;
+            padding: 5px 5px 6px;
+            box-shadow: 1px 3px 3px;
+            color:#60BF81;
+        }
+        h2{
+            color: #60BF81;
+        }
+        p{ 
+            border-radius:100;
+            width: 300px;
+            padding: 5px 10px 20px;
+            box-shadow: 2px 4px 9px;
+            color: #60BF81;  
+        }
+        input{
+            padding:5px;  
+            background-color:#93D94E;         
+        }
+        video{
+            background-color:#60BF81;
+            color: #93D94E;
+            border-radius:100;
+            width: 300px;
+            padding: 5px 10px 7px;
+            box-shadow: 2px 4px 9px;
+            width: 200px;
+        }
+        picture{       
+            color: #93D94E;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedbacks de um cliente satisfeito:</h1>
+    <video controls>
+        <source src="media/videoiphone.mp4" type="video/mp4">
+        <source src="media/videoiphone.mkv" type="video/mkv">
+        <source src="media/Videoiphone.webm" type="video/webm">
+        <source src="media/videoiphone.ogv" type="video/ogv">
+    </video>
+    <picture>
+        <source media="(max-width:800px )" srcset="media/imagem-verde-250.jpg" type="image/jpg">
+        <img src="media/imagem-verde-300.jpg" alt="Foto flexivel">
+    </picture>
+    <br>
+    <input type="button" value="Comprar celular" onclick="verificar()">
+    <script>
+        function verificar(){
+            var let = window.prompt('Digite seus dados aqui:');
+        }
+    </script>
+</body>
+</html>

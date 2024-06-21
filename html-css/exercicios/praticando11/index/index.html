@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <style>
+        @font-face {
+            font-family:'Black';
+            src: url('fonts/CloisterBlack.ttf') format('truetype');
+        }
+        body{
+        background-color: black;
+        color: white;
+        text-align: center;
+        }
+        h1{
+            font-family:'Black';
+            font-weight: lighter;
+        }
+        p{
+            text-indent: 20px;
+            margin: 10px auto 10px auto;
+            text-align: justify;
+            width: 400px;
+        }
+       div > a{
+        display: none;
+       }
+       div:hover > a{
+        display: block;
+       }
+       div::after > a{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <h1>Racionais MC</h1>
+    <p>Racionais MC's é um grupo brasileiro de rap, que surgiu em 1988, na coletânea Consciência Black, com as músicas Pânico na Zona Sul e Tempos Difíceis. As letras do grupo tem como objetivo mostrar a desigualdade social brasileira, abordando diversos temas como crime e injustiças.</p>
+
+    <picture>
+        <source media="(max-width:500px)" srcset="media/racionais-capao290.avif" type="image/avif">
+        <img src="media/racionais-capao500.avif" alt="Foto racionais">
+    </picture>
+
+    <p>Formado por Mano Brown (Pedro Paulo Soares Pereira), Ice Blue (Paulo Eduardo Salvador), Edy Rock (Edivaldo Pereira Alves) e KL Jay (Kleber Geraldo Lelis Simões), o sucesso do Racionais Mc's ultrapassou barreiras nacionais, realizando apresentações ao vivo na Europa e na Ásia.</p>
+
+    <h3>Musicas mais tocadas:</h3>
+
+    <div>  
+            Musicas
+            <a href="media/jesus-chorou.mp3">
+                <p><audio preload="auto" controls class="audio1">
+                <source src="media/jesus-chorou.mp3" type="mp3">
+                </audio></p>
+            </a>
+    </div>
+
+    
+    
+</body>
+</html>

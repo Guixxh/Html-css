@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Olá, seja bem vindo ao nosso site!</h1>
+    <h2>Verificador de idade Para para conseguir carteira de motorista.</h2>
+    <p>Coloque sua idade aqui abaixo, e voce saberá se sua idade está adequada. Para portar carteira de motorista.</p>
+    
+    <p><strong>A habilidade de dirigir é algo que leva prática, e muito tempo para ser aperfeiçoada.<br>E tambem é algo que requer cuidado do aluno, para preservar sua vida e a de outras pessoas tambem!</strong></p>
+
+    <div id="f1">Coloque sua idade no espaço abaixo e verifique-a.</div>
+    <img src="dirigindo.350.jpeg" alt="Foto de mulher sorridente dirigindo">
+    <br>
+    Sua idade: <input type="number" name="txt1" id="txt2">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res">Resultado:</div>
+   
+</body>
+<script>
+
+function Verificar(){
+    var n = window.document.getElementById('txt2');
+    var r = window.document.getElementById('res');
+    var rn = Number(n.value);
+
+    if(rn < 18){
+    var text = window.document.getElementById('res').innerHTML = `No momento, voce ainda está muito jovem para possuir uma carteira de motorista.`
+        
+    } else {
+        var text2 = window.document.getElementById('res').innerHTML = `<strong>PARABENS</strong>!.Voce está apto para possuir uma carteira de motorista.`
+    }
+
+
+
+
+
+
+}
+
+
+</script>
+</html>

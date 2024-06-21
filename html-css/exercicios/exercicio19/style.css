@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(190, 255, 190);
+    font: normal 16px Arial, Verdana, Serif;
+
+}
+h1{
+    color: rgb(33, 100, 33);
+}
+
+/*(#) Para direcionar á Id.*/
+h1#principal{
+    text-align: center;
+}
+h2{
+    color: rgb(95, 158, 95);
+}
+h1#secundario{
+    text-align: center;
+}
+p{
+    text-indent: 20px;
+    text-align: justify;
+}
+
+/* (.) Para direcionar á Class.*/
+.basico{
+    color: rgb(95, 158, 95);
+}
+.intermediario{
+    color: rgb(205, 205, 104);
+}
+.avancado{
+    color: rgb(254, 137, 137);
+}
+.destaque{
+    background-color: rgba(216, 216, 93, 0.57);
+}

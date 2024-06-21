@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(146, 197, 146);
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0px;
+            width: 700px;
+            text-align: center;
+            margin: auto;
+        }
+        header{
+            border-radius: 10px 0px;
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.348);
+            color: white;
+            background-color: rgb(76, 163, 76);
+            margin: 10px;
+            padding: 10px;
+        }
+        nav{
+
+            box-shadow:3px 4px 8px rgba(0, 0, 0, 0.323);
+            background-color:rgba(22, 128, 22, 0.723); 
+            margin-right: 10px;
+            padding:3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer > p{
+            margin: 0px;
+            padding: 4px;
+        }
+        article{
+            background-color: rgb(76, 163, 76);
+        }
+        footer{
+            padding: 2px;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+       #noticias{
+       text-align: justify;
+        color: white;
+       }
+       h2{
+        text-align: center;
+        background-color: rgba(22, 128, 22, 0.723);
+       }
+       aside > p{
+        text-align: center;
+        background-color:rgba(22, 128, 22, 0.723);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprendendo Grouping Tags</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <section id="noticias">
+                    <h2>Noticias sobre o Brasil</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta veniam, dolorem eius animi in reiciendis culpa id quia dignissimos vel sapiente quisquam ipsam non dolore, placeat suscipit? Accusantium, similique.</p>
+                    <aside>
+                        <p>Informações produzidas por Guilherme Nunes</p>
+                    </aside>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+             <p>Site produzido por Guilherme</p>
+    </footer>
+</body>
+</html>

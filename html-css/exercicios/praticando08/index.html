@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de nacionalidade</title>
+    <style>
+        body{
+            background-color: rgb(92, 92, 92);
+            color: white;
+            text-align: center;
+        }
+        input{
+            border-radius: 100px;
+            padding: 4px;
+            box-shadow: 1px 2px 3px;
+        }
+        div#res{
+            padding: 14px;
+        }
+
+        /*SITE DEFEITUOSO*/
+        
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de paises e nacionalidades</h1>
+    <p>Coloque seu pais de origem abaixo. E veja qual sua nacionalidade.</p>
+    <input type="text" name="txt1" id="txt2"> <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resposta:</div>
+
+    <script>
+        function verificar(){
+            var pais = window.document.getElementById('txt2');
+            var res = window.document.getElementById('res');
+            var r = Number(pais.value)
+
+            if(pais == 'brasil'){
+                res.innerHTML = 'Voce é brasileiro!'
+            }else{
+                res.innerHTML = 'Voce é estrangeiro!'
+            }
+            
+        }
+    </script>
+</body>
+</html>

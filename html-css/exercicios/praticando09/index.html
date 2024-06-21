@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #45C4B0, #9AEBA3);
+            text-align: center;
+            
+        }
+        main{
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 2px 5px 15px  #13678A;
+            text-align: center;
+            background-color: #359788d1;
+            width: 300px;
+            padding: 6px 10px;
+        }
+        h1{
+            color: #0d4761;
+        }
+        p{
+            color:#0d4761;
+        }
+
+    </style>
+</head>
+<body> 
+    <main>
+    <h1>Digite um número:</h1>
+    <input type="number" name="txt1" id="txt2">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <p id="res">Resposta:</p>
+    </main>
+
+    <script>
+        function verificar(){
+            var n = window.document.getElementById('txt2');
+            var r = window.document.getElementById('res');
+            var rn = Number(n.value);
+
+            var hora = new Data();
+            var diaSem = hora.getDay();
+
+            diaSem = 4
+            switch (diaSem){
+
+                case 0:
+                text= window.document.getElementById('res').innerHTML = 'Domingo'
+                break
+
+                case 1:
+                text = window.document.getElementById('res').innerHTML = 'Segunda'
+                break
+
+                case 2:
+                text = window.document.getElementById('res').innerHTML = 'Terça'
+                break
+
+                case 3:
+                text = window.document.getElementById('res').innerHTML = 'Quarta'
+                break
+
+                case 4:
+                text = window.document.getElementById('res').innerHTML = 'Quinta'
+                break
+
+                case 5:
+                text = window.document.getElementById('res').innerHTML = 'Sexta'
+                break
+
+                case 6:
+                text = window.document.getElementById('res').innerHTML = 'Sabado'
+                break
+
+                default:
+                text = window.document.getElementById('res').innerHTML = '[ERROR] Mensagem invalida, Tente novamente.'
+                break
+            
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

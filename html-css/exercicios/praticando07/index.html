@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade para votos</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-color: rgb(80, 78, 78);
+            text-align: center;
+        }
+        input{
+            border-radius: 90px;
+            padding: 4px;
+            width: 150px;
+            box-shadow: 2px 2px 3px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de idades para votar</h1>
+    <div id="f1">Digite sua idade abaixo, e veja se poderá votar.</div>
+    <br>
+    <input type="number" name="txt1" id="txt2"> <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resultado:</div>
+   
+    <script>
+        function verificar(){
+            var n = window.document.getElementById('txt2');
+            var r = window.document.getElementById('res');
+            var rn = Number(n.value);
+
+            if(rn < 16){
+                text = window.document.getElementById('res').innerHTML = 'Menor de idade. Não vota!'
+            }else if(rn > 18 || rn > 65){
+                text = window.document.getElementById('res').innerHTML = 'Voto opcional!'
+            }else{
+                text = window.document.getElementById('res').innerHTML = 'Voto obrigatório!'
+            }
+        }
+    </script>
+</body>
+</html>

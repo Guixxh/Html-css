@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+        /*Fonte importada da internet, Google Fonts.*/
+  
+        body{
+            text-align: center;
+            background-image: linear-gradient(#8C072B, #D91448);
+            background-attachment: fixed;
+        }
+        h1{
+            color:#F2AD94;
+            font-family: "Edu TAS Beginner";
+            font-size: 2em;
+        }
+        main#fundo{
+            border-radius: 10px;
+            box-shadow: 9px 9px 15px #6d052197;
+            padding: 50px 20px;
+            width: 400px;
+            margin: auto;
+            background-color: #b40f3b; 
+        }
+   </style>
+</head>
+<body>
+    <h1>Videos legais pra assistir:</h1>
+    <main id="fundo" onmouseenter="entrou()" onmouseleave="saiu()" class="fundo1">
+
+         <iframe width="300" height="200" src="https://www.youtube.com/embed/gwcCq9auQyY?si=eB_iGa-_r4AQ8GJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="tvideo" onmouseenter="entrou()">
+         </iframe>
+             
+       
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/gBSwdbypQ9g?si=WaYuLdJiAbpojd6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="tvideo2">
+        </iframe>
+        
+    </main>
+        <script>
+         function entrou(){
+            var f = window.document.getElementById('fundo');
+            var v = window.document.getElementById('tvideo');
+            var v2 = window.document.getElementById('tvideo2');
+
+            f.style.width = '420px'
+            f.style.padding = '55px 30px'
+            v.width = '340'
+            v.height = '220'
+            v2.width = '340'
+            v2.height = '220'
+         }
+
+         function saiu(){
+            var f = window.document.getElementById('fundo');
+            var v = window.document.getElementById('tvideo');
+            var v2 = window.document.getElementById('tvideo2');
+
+            f.style.width = '400px'
+            f.style.padding = '50px 20px'
+            v.width = '300'
+            v.height = '200'
+            v2.width = '300'
+            v2.height = '200'
+     
+         }
+        </script>
+</body>
+</html>

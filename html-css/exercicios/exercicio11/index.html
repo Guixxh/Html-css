@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Teste de medías</h1>
+    <p>Abra esse site em diferentes dispositivos para testar</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p300.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-g700.png" type="image/png">
+        <img src="Imagens/foto-m1000.png" alt="Foto flexivel">
+    </picture>
+    
+        <h1>Agora vou trabalhar com audios!</h1>
+        <p>Essas são algumas das minhas musicas favoritas:</p>
+        <audio preload="metadata" controls>
+            <source src="media/been.away-brent.faiyaz.mp3" type="audio/mpeg">
+            <source src="media/been.away-brent.faiyaz.ogg" type="audio/ogg">
+            <source src="media/been.away-brent.faiyaz.wav" type="audio/wav"><!--arquivo pesado demais!!!-->
+        </audio> <p>Infelizmente seu site nao permite tocar musicas. Clique no link para <a href="media/been.away-brent.faiyaz.mp3">baixar o audio</a>.</p>
+
+</body>
+</html>

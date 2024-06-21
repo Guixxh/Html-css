@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de idades</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(250, 132, 132);
+            font: normal 11pt Arial;
+            text-align: center;
+        }
+        ol{
+            background-color: rgb(247, 84, 84);
+            border-radius: 3px 2px 4px;
+            box-shadow: 3px 2px 7px;
+            width: 300px;
+            margin: auto;
+        }
+        h1{
+            background-color:rgb(247, 84, 84);
+            border-radius: 2px 3px 4px;
+            box-shadow: 3px 2px 4px;
+            width: 700px;
+            margin: auto;
+        }
+        img{
+            background-color:rgb(247, 84, 84);
+            border-radius: 2px 3px 4px;
+            box-shadow: 1px 2px 6px;
+            padding: 9px;
+        }
+        div#f1{
+            padding: 15px;
+        }
+        div#res{
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de idades para carteira de motorista</h1>
+
+    <h2>Este site lhe ajudará a saber se voce está na idade correta.<br>
+     Para ter sua carta de motorista, leia as informações abaixo:</h2>
+
+     <p>Para lhe ajudarmos precisamos saber sua idade. <br>Se sua idade for maior de <ins>18 anos</ins>, voce poderá ter carteira de motorista, pelo contrário, voce nao poderá te-la.</p>
+     
+     <p>Leia a lista de obrigações no transito:</p>
+    
+        <ol>
+            <li>Ficar atento aos retrovisores.</li>
+            <li>Sempre dar seta para o lado que ira seguir.</li>
+            <li>Usar cinto de segurança para sua segurança.</li>
+            <li>Não dirigir embreagado.</li>
+            <li>Obedecer a faixa de pedestre.</li>
+        </ol>
+    
+     <p>Esses são as <em>obrigações basicas</em> que todo cidadão deve saber e deve cumpri-las. <br>Agora que voce já sabe delas, verifique sua idade aqui abaixo:</p>
+
+     <img src="mdirigindo400.jpg" alt="Foto de mulher dirigindo">
+
+     <div id="f1">Coloque sua idade aqui:</div>
+
+     <input type="number" name="txt1" id="txt2"> <input type="button" value="Verificar" onclick="verificar()">
+
+     <div id="res">Resposta:</div>
+
+        <script>
+
+            function verificar(){
+                var n = window.document.getElementById('txt2');
+                var r = window.document.getElementById('res');
+                var rn = Number(n.value);
+
+                if(rn < 18){
+                    text = window.document.getElementById('res').innerHTML = `Voce tem ${rn} anos. Ainda é muito jovem para ter carteira de motorista.`
+
+                } else {
+                    text = window.document.getElementById('res').innerHTML = `<strong>PARABÉNS</strong>, voce tem ${rn} anos. Já pode ter carteira de motorista!`
+            
+                  }
+
+                              }
+
+        </script>
+     
+     
+   
+</body>
+</html>
