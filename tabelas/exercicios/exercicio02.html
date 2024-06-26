@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-variant: small-caps;
+        }
+        table{
+            border-collapse: collapse;
+            display: inline-block;
+        }
+        td, th{
+            border: 1px solid black;
+            width: 400px;
+            padding: 8px;
+            text-align: center;
+        }
+        thead, tfoot{
+            background-color: rgb(116, 112, 112);
+            color: white;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Paises</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">203. 080. 756</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td class="num">1. 429. 921. 746</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="num">339. 987. 103</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="num">240. 215. 932</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="num">134. 127. 189</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <th>Total de habitantes</th>
+               <td><strong>4. 694. 665. 452 Habitantes</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
