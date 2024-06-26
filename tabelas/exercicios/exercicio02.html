@@ -12,6 +12,14 @@
         h1{
             font-variant: small-caps;
         }
+        caption{
+            background-color: rgba(128, 128, 128, 0.64);
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
         table{
             border-collapse: collapse;
             display: inline-block;
@@ -34,10 +42,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das paises do mundo</caption>
         <thead>
             <tr>
-                <th>Paises</th>
-                <th>População</th>
+                <th scope="col">Paises</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -64,7 +73,7 @@
         </tbody>
         <tfoot>
             <tr>
-               <th>Total de habitantes</th>
+               <th scope="row">Total de habitantes</th>
                <td><strong>4. 694. 665. 452 Habitantes</strong></td>
             </tr>
         </tfoot>
