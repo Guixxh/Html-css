@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .cnome{
+            background-color: rgb(207, 206, 206);
+        }
+        .cgrupo{
+            background-color: rgb(172, 172, 172);
+        }
+        .cprof{
+            background-color:rgb(207, 206, 206);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fabiane</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Atendente</td>
+            </tr>
+            <tr>
+                <td>Paolla</td>
+                <td>F</td>
+                <td>5</td>
+                <td>Desempregada</td>
+            </tr>
+            <tr>
+                <td>Eduarda</td>
+                <td>F</td>
+                <td>11</td>
+                <td>Desempregada</td>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>M</td>
+                <td>17</td>
+                <td>Desempregado</td>
+            </tr>
+            <tr>
+                <td>Rodrigo</td>
+                <td>M</td>
+                <td>37</td>
+                <td>Atendende</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
